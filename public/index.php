@@ -14,6 +14,6 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     </head>
     <body>
-        <?php //include_once $view_path.$page.'.php'; ?>
+        <?php include_once $view_path.$page.'.php'; ?>
     </body>
 </html>
