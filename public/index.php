@@ -2,6 +2,8 @@
     $config = json_decode(file_get_contents(__DIR__.'/../data/config.json'));
 
     $page_title = $config->company->name;
+
+    include_once 'route.php';
 ?>
 <html>
     <head>
@@ -12,6 +14,6 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     </head>
     <body>
-        <?php include_once ('route.php'); ?>
+        <?php include_once $view_path.$page.'.php'; ?>
     </body>
 </html>
