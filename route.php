@@ -4,18 +4,18 @@
 
     switch ($page) {
         case 'root':
-            include_once 'page/root.php';
+            include_once 'view/root.php';
             break;
         case 'post':
             $code = $_GET['code'];
             if(!$code) {
-                include_once 'page/404.php';
+                include_once 'view/404.php';
                 break;
             }
-            include_once 'page/post.php';
+            include_once 'view/post.php';
             break;
         default:
-            include_once 'page/404.php';
+            include_once 'view/404.php';
             break;
     }
 ?>
