@@ -1,3 +1,10 @@
+<?php
+    include_once '../helper/helper.php';
+    $helper = new Helper();
+
+    echo $helper->createLink('post');
+?>
+
 <div data-role="nav-wrap">
     <div data-role="nav-brand-wrap"></div>
 

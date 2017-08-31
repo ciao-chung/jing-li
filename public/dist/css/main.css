@@ -1,1 +1,1 @@
-button{color:green}
+div[data-role="nav-wrap"] ul[data-role="nav-list"] li[data-role="nav-item"] a{display:block}

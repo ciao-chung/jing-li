@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="dist/css/main.css">
     </head>
     <body>
-        <?php include_once ''; ?>
+        <?php include_once '../menu/menu.php'; ?>
         <?php include_once $view_path.$page.'.php'; ?>
     </body>
 </html>
