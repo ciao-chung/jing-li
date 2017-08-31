@@ -1,5 +1,6 @@
 <?php
     $view_path = '../view/';
+    $data_path = '../data/';
     $page = $_GET['page'];
     if(!$page) $page = 'root';
 
