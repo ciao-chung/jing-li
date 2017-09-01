@@ -2,3 +2,5 @@
 **/vendor/**
 **/node_modules/**
 public/.sass-cache/
+public/assets/css/
+!public/assets/css/.gitkeep
