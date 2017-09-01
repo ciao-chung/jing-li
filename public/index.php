@@ -18,8 +18,11 @@
         <meta property="og:url" content="">
         <meta property="og:image" content="">
         <title></title>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     </head>
     <body>
+        <button type="button" class="btn btn-info">asdf</button>
         <!-- menu -->
         <?php $app->render('menu/menu.php'); ?>
 
