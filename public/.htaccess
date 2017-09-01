@@ -1,9 +1,0 @@
-RewriteEngine on
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
-RewriteRule ^index\.php$ - [L]
-RewriteRule ^(api)($|/) - [L]
-
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
-RewriteRule ^([a-z0-9_-]+)(/)?$ ?page=$1 [L]
-RewriteRule ^(post)/(.*)(/)?$ ?page=post&id=$2 [L]
