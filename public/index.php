@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     </head>
     <body>
-        <button type="button" class="btn btn-info">asdf</button>
         <!-- menu -->
         <?php $app->render('menu/menu.php'); ?>
 
