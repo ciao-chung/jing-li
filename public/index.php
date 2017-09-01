@@ -20,18 +20,28 @@
         <title></title>
     </head>
     <body>
-        <?php
-            $app->get('/', function () use ($app) {
-                $app->render('home.php');
-            });
+        <!-- menu -->
+        <?php $app->render('menu/menu.php'); ?>
 
-            $app->get('/post/:code', function ($code) use ($app) {
-                $app->render('post.php', [
-                    'code' => $code,
-                ]);
-            });
+        <!-- page route -->
+        <div data-role="page-container">
+          <?php
+              $app->get('/', function () use ($app) {
+                  $app->render('home.php');
+              });
 
-            $app->run();
-        ?>
+              $app->get('/post/:code', function ($code) use ($app) {
+                  $app->render('post.php', [
+                      'code' => $code,
+                  ]);
+              });
+
+              $app->get('/contact', function () use ($app) {
+                  $app->render('contact.php');
+              });
+
+              $app->run();
+          ?>
+        </div>
     </body>
 </html>
