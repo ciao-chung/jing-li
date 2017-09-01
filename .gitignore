@@ -1,1 +1,5 @@
-vendor/
+.idea/
+**/vendor/**
+**/node_modules/**
+public/.sass-cache/
+
