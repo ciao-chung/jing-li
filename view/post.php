@@ -1,4 +1,1 @@
-<?php
-    echo $post['title']."<br>";
-    echo $post['content'];
-?>
+post template: <?php echo $code; ?>
