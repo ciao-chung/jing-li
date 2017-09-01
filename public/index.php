@@ -1,12 +1,8 @@
 <?php
-use \Psr\Http\Message\ServerRequestInterface as Request;
-use \Psr\Http\Message\ResponseInterface as Response;
-
-require '../vendor/autoload.php';
-
-$app = new \Slim\App;
-$app->get('/', function (Request $request, Response $response) {
-    return 'slim app';
-});
-
-$app->run();
+    require '../vendor/autoload.php';
+    $app = new \Slim\Slim();
+    $app->get('/hello/:name', function ($name) {
+        echo "Hello, " . $name;
+    });
+    $app->run();
+?>
