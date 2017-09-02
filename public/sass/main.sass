@@ -1,30 +1,6 @@
 @import 'variable'
-$nav-width: 150px
-$nav-height: 50px
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic')
+$font-theme: 'Didact Gothic'
 
-// menu
-div[data-role="nav-wrap"]
-  ul
-    padding: 0
-    li
-      border: 1px green solid
-      list-style: none
-      a
-        display: block
-        text-decoration: none
-        padding: 10px 10px
-        color: $theme-color
-        &:hover
-          color: $theme-color
-  div.nav-brand-wrap
-  ul.nav-list
-    li.nav-item
-      a
-        display: block
-        color: $theme-color
-        &:hover
-          color: $theme-color
-      ul.sub-menu-wrap
-        li.sub-meu
-          a
-            border: 1px yellow solid
+h1, h2, h3, h4, h5, h6, div, span, a, strong, p, label, select, textarea, td, th,li, input, input::-webkit-input-placeholder, button, code
+  font-family:  $font-theme, 'Microsoft JhengHei', monospace, 'Fontawesome'

@@ -107,9 +107,7 @@
 
 <nav class="hidden-xs hidden-sm navbar footer-nav" role="navigation">
     <div class="container">
-
         <div class="navbar-header">
-
             <div class="navbar-brand">
                 <span class="sr-only">&copy;THEMEWAGON</span>
                 <a href="index.html">
@@ -117,38 +115,6 @@
                 </a>
             </div>
 
-        </div>
-
-        <div class="collapse navbar-collapse" id="main-nav-collapse">
-            <ul class="nav navbar-nav navbar-right text-capitalize">
-                <li><a href="#about">
-                    <span>home</span>
-                </a></li>
-
-                <li><a href="#services">
-                    <span>pages</span>
-                </a></li>
-
-                <li><a href="#portfolio">
-                    <span>features</span>
-                </a></li>
-
-                <li><a href="#team">
-                    <span>portfolio</span>
-                </a></li>
-
-                <li><a href="#pricing">
-                    <span>blog</span>
-                </a></li>
-
-                <li><a href="#blog">
-                    <span>shop</span>
-                </a></li>
-
-                <li><a href="#contact">
-                    <span>contact</span>
-                </a></li>
-            </ul>
         </div>
     </div>
 </nav>
