@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="assets/css/owl.carousel.css">
         <link rel="stylesheet" href="assets/css/owl.theme.css">
         <link rel="stylesheet" href="assets/css/style.css">
-        <script type="text/javascript" src="assets/js/modernizr.custom.97074.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
     </head>
     <body>
         <?php
