@@ -2,7 +2,6 @@
     <div class="container">
         <div class="row">
 
-            <!-- useful links -->
             <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
                 <h4>Useful Links</h4>
                 <ul class="row footer-links">
@@ -24,7 +23,6 @@
                 </ul>
             </div>
 
-            <!-- recent news -->
             <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
                 <h4>Recent News</h4>
 
@@ -42,7 +40,7 @@
                             <p class="news-date">Dec 12,2015</p>
                         </div>
                     </div>
-                </div> <!-- /.footer-news -->
+                </div>
 
                 <div class="row footer-news">
                     <div class="col-md-4 col-sm-4 col-xs-6">
@@ -58,10 +56,9 @@
                             <p class="news-date">Dec 12,2015</p>
                         </div>
                     </div>
-                </div> <!-- /.footer-news -->
-            </div> <!-- /.footer-widget -->
+                </div>
+            </div>
 
-            <!-- news-letter -->
             <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
                 <h4>E-News-Letter</h4>
 
@@ -73,9 +70,8 @@
                     </span>
                 </div>
                 <p>We respect your privacy</p>
-            </div> <!-- /.footer-widget -->
+            </div>
 
-            <!-- about avada agency -->
             <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
                 <h4>Avada Agency</h4>
 
@@ -100,33 +96,29 @@
                             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                             <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul> <!-- /.footer-share-button -->
+                        </ul>
                     </div>
                 </div>
-            </div> <!-- /.footer-widget -->
+            </div>
 
         </div>
     </div>
 </footer>
 
-<!-- footer-navigation start -->
 <nav class="hidden-xs hidden-sm navbar footer-nav" role="navigation">
     <div class="container">
 
         <div class="navbar-header">
 
-            <!-- navbar logo -->
             <div class="navbar-brand">
                 <span class="sr-only">&copy;THEMEWAGON</span>
                 <a href="index.html">
                     &copy;THEMEWAGON
                 </a>
             </div>
-            <!-- navbar logo -->
 
-        </div><!-- /.navbar-header -->
+        </div>
 
-        <!-- nav links -->
         <div class="collapse navbar-collapse" id="main-nav-collapse">
             <ul class="nav navbar-nav navbar-right text-capitalize">
                 <li><a href="#about">
@@ -157,8 +149,6 @@
                     <span>contact</span>
                 </a></li>
             </ul>
-        </div><!-- nav links -->
-
-    </div><!-- /.container -->
+        </div>
+    </div>
 </nav>
-<!-- footer-navigation end -->
