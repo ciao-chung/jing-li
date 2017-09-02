@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-widget">
                 <h4>相關報導</h4>
                 <ul class="row footer-links">
                     <div class="col-md-6 col-sm-6 col-xs-6">
@@ -23,7 +23,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-widget">
                 <h4>Recent News</h4>
 
                 <div class="row footer-news">
@@ -55,48 +55,6 @@
                             </p>
                             <p class="news-date">Dec 12,2015</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
-                <h4>E-News-Letter</h4>
-
-                <p>Sign up for our mailing list to get latest updates and offers</p>
-                <div class="input-group margin-bottom-sm">
-                    <input class="form-control" type="text" placeholder="Email address">
-                    <span class="input-group-addon">
-                        <i class="fa fa-paper-plane fa-fw"></i>
-                    </span>
-                </div>
-                <p>We respect your privacy</p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
-                <h4>Avada Agency</h4>
-
-                <p>
-                    HUGE Website Builder is a big library of pre-designed web elements which help you to create website in few minutes.
-                </p>
-
-                <div class="footer-address">
-                    <p>
-                        1-800-123-HELLO  <br>
-                        example@mail.com
-                    </p>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="footer-share-button">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
