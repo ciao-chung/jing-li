@@ -3,45 +3,75 @@
 
   <ul class="nav-list">
     <li class="nav-item">
-      <a href="/">首頁</a>
+      <a href="/">
+        <i class="fa fa-home"></i>
+        首頁
+      </a>
     </li>
 
     <li class="nav-item">
-      <a>關於淨麗</a>
+      <a>
+        <i class="fa fa-info-circle"></i>
+        關於淨麗
+      </a>
       <ul class="sub-menu-wrap">
         <li class="sub-meu">
-          <a href="/post/concept">經營理念</a>
+          <a href="/post/concept">
+            <i class="fa fa-lightbulb-o"></i>
+            經營理念
+          </a>
         </li>
 
         <li class="sub-meu">
-          <a href="/post/tech">領先技術</a>
+          <a href="/post/tech">
+            <i class="fa fa-rocket"></i>
+            領先技術
+          </a>
         </li>
 
         <li class="sub-meu">
-          <a href="/post/customer">我們的客戶</a>
+          <a href="/post/customer">
+            <i class="fa fa-user-circle"></i>
+            我們的客戶
+          </a>
         </li>
 
         <li class="sub-meu">
-          <a href="/contact">聯絡我們</a>
+          <a href="/contact">
+            <i class="fa fa-phone"></i>
+            聯絡我們
+          </a>
         </li>
       </ul>
     </li>
 
     <li class="nav-item">
-      <a>服務項目</a>
+      <a>
+        <i class="fa fa-suitcase"></i>
+        服務項目
+      </a>
       <ul class="sub-menu-wrap">
         <li class="sub-meu">
-          <a href="/post/cube">週波室內水管清洗</a>
+          <a href="/post/cube">
+            <i class="fa fa-tint"></i>
+            週波室內水管清洗
+          </a>
         </li>
 
         <li class="sub-meu">
-          <a href="/post/cleaning">外觀清潔</a>
+          <a href="/post/cleaning">
+            <i class="fa fa-gear"></i>
+            外觀清潔
+          </a>
         </li>
       </ul>
     </li>
 
     <li class="nav-item">
-      <a href="/post/allergen">被忽略的過敏源</a>
+      <a href="/post/allergen">
+        <i class="fa fa-stethoscope"></i>
+        被忽略的過敏源
+      </a>
     </li>
   </ul>
 </div>
