@@ -1,3 +1,22 @@
+<?php
+  $features = [
+    [
+      'icon' => 'thumbs-up',
+      'title' => '客戶肯定',
+      'content' => '多年的耕耘讓<br>我們累積了無數客戶的肯定<br>包含了許多上市上櫃的大公司<br>',
+    ],
+    [
+      'icon' => 'map-marker',
+      'title' => '全省服務',
+      'content' => '我們的服務遍及全省<br>專業強大的團隊<br>無論在台灣任何地方皆能執行任務',
+    ],
+    [
+      'icon' => 'rocket',
+      'title' => '持續精進',
+      'content' => '公司雖然經營多年<br>技術仍然不斷的再精進<br>只為帶給客戶更專業的服務',
+    ],
+  ];
+?>
 <link rel="stylesheet" href="assets/css/home.css">
 <header id="header" class="header-wrapper home-parallax home-fade">
     <div class="header-overlay"></div>
@@ -24,7 +43,7 @@
 
                 <div class="col-md-7">
                     <div class="intro-description">
-                        <h2>avada the best agency for ever</h2>
+                        <h2>經營理念</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ex, fermentum vel libero eget interdum semper libero. Curabitur egestas, arcu id tempor convallis.
                         </p>
@@ -68,141 +87,25 @@
     <section class="bg-white feature">
         <div class="container">
             <div class="row">
-
-                <div class="col-md-3">
+                <?php foreach ($features as $index => $feature) {  ?>
+                <div class="col-md-4">
                     <div class="feature-content text-center">
                         <div class="feature-icon-box">
                             <div class="feature-icon center-block">
-                                <i class="fa fa-laptop"></i>
+                                <i class="fa fa-<?php echo $feature['icon']; ?>"></i>
                             </div>
                         </div>
                         <div class="feature-info">
-                            <h3 class="feature-heading">Responsive &amp; Multi-purpose</h3>
+                            <h3 class="feature-heading">
+                              <?php echo $feature['title']; ?>
+                            </h3>
                             <p class="feature-description">
-                                Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.
+                                <?php echo $feature['content']; ?>
                             </p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3">
-                    <div class="feature-content text-center">
-                        <div class="feature-icon-box">
-                            <div class="feature-icon center-block">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                        </div>
-                        <div class="feature-info">
-                            <h3 class="feature-heading">Clean &amp; Clear</h3>
-                            <p class="feature-description">
-                                Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="feature-content text-center">
-                        <div class="feature-icon-box">
-                            <div class="feature-icon center-block">
-                                <i class="fa fa-thumbs-o-up"></i>
-                            </div>
-                        </div>
-                        <div class="feature-info">
-                            <h3 class="feature-heading">Best UX</h3>
-                            <p class="feature-description">
-                                Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="feature-content text-center">
-                        <div class="feature-icon-box">
-                            <div class="feature-icon center-block">
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="feature-info">
-                            <h3 class="feature-heading">Good Feedback</h3>
-                            <p class="feature-description">
-                                Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-light-gray">
-        <div class="container">
-
-            <div class="headline text-center">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h2 class="section-title">show off our portfolio</h2>
-                        <p class="section-sub-title">
-                            absolutely stunning design &amp; functionality
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="twit-feed">
-        <div class="twit-feed-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div id="twit" class="owl-carousel owl theme">
-
-                            <div class="item text-center">
-                                <div class="twit-content">
-                                    <div class="twit-icon">
-                                        <i class="fa fa-twitter"></i>
-                                    </div>
-                                    <h3 class="text-capitalize">free stock photos: 74 best sites to find Awesome free images</h3>
-                                    <p>
-                                        @themewagon <br/>
-                                        2 days ago on Twitter.com
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="item text-center">
-                                <div class="twit-content">
-                                    <div class="twit-icon">
-                                        <i class="fa fa-twitter"></i>
-                                    </div>
-                                    <h3 class="text-capitalize">free stock photos: 74 best sites to find Awesome free images</h3>
-                                    <p>
-                                        @themewagon <br/>
-                                        2 days ago on Twitter.com
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="item text-center">
-                                <div class="twit-content">
-                                    <div class="twit-icon">
-                                        <i class="fa fa-twitter"></i>
-                                    </div>
-                                    <h3 class="text-capitalize">free stock photos: 74 best sites to find Awesome free images</h3>
-                                    <p>
-                                        @themewagon <br/>
-                                        2 days ago on Twitter.com
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+                <?php }; ?>
             </div>
         </div>
     </section>
