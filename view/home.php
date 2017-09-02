@@ -17,7 +17,7 @@
     ],
   ];
 ?>
-<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="/assets/css/home.css">
 <header id="header" class="header-wrapper home-parallax home-fade">
     <div class="header-overlay"></div>
     <div class="header-wrapper-inner">
@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="assets/img/intro.jpg" class="img-responsive center-block" alt="intro">
+                    <img src="/assets/img/intro.jpg" class="img-responsive center-block" alt="intro">
                 </div>
 
                 <div class="col-md-7">

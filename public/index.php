@@ -17,13 +17,13 @@
         <meta property="og:url" content="">
         <meta property="og:image" content="">
         <title><?php echo $config->seo->title; ?></title>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.css">
-        <link rel="stylesheet" href="assets/css/owl.theme.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script type="text/javascript" src="assets/js/app.js"></script>
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/css/animate.css">
+        <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="/assets/css/owl.theme.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <script type="text/javascript" src="/assets/js/app.js"></script>
     </head>
     <body>
         <?php
@@ -47,10 +47,10 @@
 
             $app->run();
         ?>
-        <script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
-        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.hoverdir.js"></script>
+        <script type="text/javascript" src="/assets/js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/assets/js/owl.carousel.js"></script>
+        <script type="text/javascript" src="/assets/js/jquery.hoverdir.js"></script>
         <script type="text/javascript">
             $(function() {
                 $('.portfolio-item > .item-image').each( function() { $(this).hoverdir({

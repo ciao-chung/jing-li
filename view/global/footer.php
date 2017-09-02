@@ -28,7 +28,7 @@
 
                 <div class="row footer-news">
                     <div class="col-md-4 col-sm-4 col-xs-6">
-                        <img src="assets/img/intro.jpg" class="img-responsive center-block" alt="recent news 1">
+                        <img src="/assets/img/intro.jpg" class="img-responsive center-block" alt="recent news 1">
                     </div>
                     <div class="col-md-8 col-sm-4 col-xs-6">
                         <div class="row">
@@ -44,7 +44,7 @@
 
                 <div class="row footer-news">
                     <div class="col-md-4 col-sm-4 col-xs-6">
-                        <img src="assets/img/intro.jpg" class="img-responsive center-block" alt="recent news 2">
+                        <img src="/assets/img/intro.jpg" class="img-responsive center-block" alt="recent news 2">
                     </div>
                     <div class="col-md-8 col-sm-4 col-xs-6">
                         <div class="row">
