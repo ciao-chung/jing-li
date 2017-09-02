@@ -24,8 +24,8 @@
         <div class="container">
 
             <div class="welcome-speech">
-                <h1>淨麗清潔有限公司</h1>
-                <p>不斷創新, 是永續的經營</p>
+                <h1><?php echo $config->company->name; ?></h1>
+                <p><?php echo $config->company->slogan; ?></p>
             </div>
 
         </div>

@@ -3,7 +3,7 @@
         <div class="row">
 
             <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
-                <h4>Useful Links</h4>
+                <h4>相關報導</h4>
                 <ul class="row footer-links">
                     <div class="col-md-6 col-sm-6 col-xs-6">
                         <li><a href="#">Web Design</a></li>
