@@ -214,7 +214,9 @@
 <script>
 import baseConfig from 'src/mixins/base.js'
 export default {
-
+  data: function() {
+    return {}
+  },
 }
 </script>
 

@@ -62,3 +62,52 @@
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      menus: [
+        {
+          label: '首頁',
+          route: { name: 'root' },
+        },
+        {
+          label: '關於淨麗',
+          sub: [
+            {
+              label: '領先技術',
+              route: { name: 'post', params: { code: 'skill' } },
+            },
+            {
+              label: '我們的客戶',
+              route: { name: 'post', params: { code: 'customer' } },
+            },
+            {
+              label: '聯絡我們',
+              route: { name: 'contact' },
+            },
+          ],
+        },
+        {
+          label: '服務項目',
+          sub: [
+            {
+              label: '週波室內水管清洗',
+              route: { name: 'post', params: { code: 'tube_cleaning' } },
+            },
+            {
+              label: '外觀清潔',
+              route: { name: 'post', params: { code: 'normal_cleaning' } },
+            },
+          ],
+        },
+        {
+          label: '服務項目',
+          external: 'https://www.goolge.com',
+        }
+      ],
+    }
+  }
+}
+</script>
