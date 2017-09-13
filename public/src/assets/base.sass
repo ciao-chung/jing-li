@@ -1,0 +1,178 @@
+@import 'src/assets/variable'
+@import 'src/assets/mixin'
+
+/**
+ * 基本設定
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic')
+$font-theme: 'Didact Gothic'
+
+html
+  font-size: 16px
+
+div, a, p, strong, label, input, select, textarea, td, th, button, li, code
+  font-size: 1rem
+  
+h1, h2, h3, h4, h5, h6, div, span, a, strong, p, label, select, textarea, td, th,li, input, input::-webkit-input-placeholder, button, code
+  font-family:  $font-theme, 'Microsoft JhengHei', monospace, 'Fontawesome'
+h1, h2, h3, h4, h5, h6, div, span, a, strong, p, label, select, textarea
+  color: $text
+
+.form-control
+  border-radius: 0
+
+.table
+  th, td
+    font-size: $base-font-size
+  .thead-inverse
+    background-color: lighten($gray, 10%)
+    color: white
+
+.text
+  &-info
+    color: $light-blue
+  &-primary
+    color: $blue
+  &-success
+    color: $green
+  &-warning
+    color: $orange
+  &-danger
+    color: $red
+
+.btn
+  outline: none
+  cursor: pointer
+  border-radius: 0
+  &:focus, &:active
+    outline: none
+  &>span
+    color: white
+a[href]
+  color: darken($light-blue, 10%)
+a.label
+  &.label-info
+    background-color: #5bc0de
+    color: white
+    font-size: 14px
+    padding: 0.25rem 0.5rem 0.25rem
+    margin-right: 10px
+    font-weight: normal
+    font-family:  $font-theme, 'Microsoft JhengHei', monospace, 'Fontawesome'
+
+div[role="tooltip"]
+  z-index: $nav-zIndex - 400
+
+span[data-role="mark"]
+  font-weight: bold
+  color: $highlight-color
+
+.btn-transparent
+  background-color: rgba(255, 255, 255, 0)
+  border: 1px white solid
+  color: white
+
+.radio-group
+  display: inline-block
+  input[type="radio"]
+    display: none
+    &:checked + label:before
+      background-color: $highlight-color
+  &.orange
+    input[type="radio"]
+      &:checked + label:before
+        background-color: lighten($orange, 5%)
+
+  label
+    font-weight: normal
+    // font-size: 1.1em
+    cursor: pointer
+    vertical-align: middle
+    margin-right: .5em
+    padding-top: 5px
+    &:before
+      content: ''
+      border-radius: 50%
+      width: 1em
+      height: 1em
+      display: inline-block
+      background: white
+      box-shadow: inset 0 0 0 3px lighten(black, 80%)
+      vertical-align: middle
+      margin-right: 0.2em
+
+.form-checkbox
+  input[type="checkbox"]
+    display: none
+    &:checked + label:before
+      background-color: $theme-color
+    & + label
+      font-weight: normal
+      font-size: $base-font-size
+      cursor: pointer
+      vertical-align: middle
+      margin-right: .5em
+      padding-top: 5px
+      &:before
+        content: ''
+        width: 1em
+        height: 1em
+        display: inline-block
+        background: white
+        box-shadow: inset 0 0 0 3px lighten(black, 80%)
+        vertical-align: middle
+        margin-right: 0.5em
+
+.lock-icon
+  color: $orange
+
+button.btn
+  &.btn-main
+    color: white
+    background-color: $theme-color
+    box-shadow: none
+    outline: none
+    border: none
+    padding: 5px 15px
+    &.square
+      padding: 10px
+    &:active
+      background-color: lighten($theme-color, 10%)
+    &:active, &:focus
+      outline: none
+
+div[data-role="form"]
+  $form-item-height: 37px
+  $form-item-textarea-height: 150px
+  @media (min-width: 992px)
+    margin: 10px 0
+    &.row
+      padding: 0
+    div[data-role="form-item"]
+      margin: 10px 0
+      label[data-role="item-label"]
+        margin: 0
+        vertical-align: bottom
+        height: $form-item-height
+        border-bottom: 1px $gray solid
+      div[data-role="item-control"]
+        height: $form-item-height
+        border-bottom: 1px $light-gray solid
+
+      &.textarea
+        height: $form-item-textarea-height
+        label[data-role="item-label"]
+          height: $form-item-textarea-height
+        div[data-role="item-control"]
+          height: $form-item-textarea-height
+      @mixin setFormItem
+        border: none
+        box-shadow: none
+        border-bottom: 1px $light-gray solid
+      input
+        @include setFormItem
+      textarea
+        @include setFormItem
+        resize: none
+        height: $form-item-textarea-height

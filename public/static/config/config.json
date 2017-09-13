@@ -1,0 +1,11 @@
+{
+  "defaultLang": "zh_tw",
+
+  "devApi": {
+    "url": "http://localhost:9000/api"
+  },
+
+  "prodApi": {
+    "url": "https://api.anchor.ciao.idv.tw/api"
+  }
+}

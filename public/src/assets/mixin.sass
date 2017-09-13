@@ -1,0 +1,124 @@
+
+/**
+ * css transition
+ *
+ * @param string $property - transition影響的屬性
+ * @param number $time - transition時間
+ * @param number $time - transition貝茲曲線(ease, linear, ease-in, ease-out, ease-in-out)
+ */
+@mixin transition ($property, $time, $style)
+  transition: $property $time $style
+  -webkit-transition: $property $time $style
+  -moz-transition: $property $time $style
+  -o-transition: $property $time $style
+  -ms-transition: $property $time $style
+
+
+@mixin set-scaleX($scale)
+  -webkit-transform: scaleX($scale)
+  -o-transform: scaleX($scale)
+  -moz-transform: scaleX($scale)
+  transform: scaleX($scale)
+
+/**
+ * 波紋效果
+ */
+@mixin ripple
+  position: relative
+  overflow: hidden
+
+  &:after 
+    content: ''
+    background: rgba(255,255,255,0.3)
+    display: block
+    position: absolute
+    left: 50%
+    top: 50%
+    border-radius: 50%
+    padding-top: 240%
+    padding-left: 240%
+    margin-top: -120%
+    margin-left: -120%
+    opacity: 0
+    transition: all 1.5s
+
+
+  &:active:after 
+    padding-top: 0
+    padding-left: 0
+    margin-top: 0
+    margin-left: 0
+    opacity: 1
+    transition: 0s
+
+/**
+ * 淡入淡出及捲動效果
+ */
+@mixin fadeToggle ($time)
+  opacity: 0
+  pointer-events: none
+  max-height: 0
+  @include transition(all, $time, ease-out)
+
+  &.active
+    opacity: 1
+    max-height: 100vh
+    pointer-events: auto
+    @include transition(all, $time, ease-in)
+
+/**
+ * 淡入淡出及捲動效果(for hover)
+ */
+@mixin hoverFadeToggle ($time)
+  &>ul
+    opacity: 0
+    pointer-events: none
+    max-height: 0
+    @include transition(all, $time, ease-out)
+
+  &:hover
+    &>.menu-group
+      opacity: 1
+      max-height: 100vh
+      pointer-events: auto
+      @include transition(all, $time, ease-in)
+
+/**
+ * 底線hover效果
+ */
+@mixin underlineAnimation
+  &:before
+    content: ''
+    position: absolute
+    left: 0;  bottom: 0
+    width: 100%;  height: 0
+    border-bottom: 4px $highlight-color solid
+
+    @include set-scaleX(0)
+    @include transition(all, 0.2s, ease)
+
+  &:hover
+    &:before
+      @include set-scaleX(1)
+      @include transition(all, 0.2s, ease)
+
+/**
+ * overlay
+ */
+@mixin overlay($overlay-height, $opacity)
+  overflow: hidden
+  position: relative
+  &>.overlay
+      position: absolute
+      background-color: rgba(0, 0, 0, $opacity)
+      color: white
+      width: 100%
+      line-height: $overlay-height
+      height: $overlay-height*2
+      bottom: - $overlay-height
+      text-align: center
+      @include transition(all, 0.5s, ease)
+  &:hover
+    &>.overlay
+      bottom: 0
+      @include transition(all, 0.5s, ease)
