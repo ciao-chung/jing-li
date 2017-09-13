@@ -1,28 +1,35 @@
 <template>
   <div id="app">
+    <global-menu></global-menu>
+
+    <transition name="router">
+      <router-view class="page-body"></router-view>
+    </transition>
+
+    <global-footer></global-footer>
+    <global-copyright></global-copyright>
   </div>
 </template>
 
 <script>
 import bootstrap from 'bootstrap/dist/js/bootstrap.js'
-
+import 'owl.carousel/dist/owl.carousel.min.js'
+import 'assets/jquery.hoverdir.js'
 export default {
   name: 'app',
-  components: {},
-  computed: {
-    isLoading: function() {
-      return this.$store.getters.isLoading
-    },
-    formOnSave: function() {
-      return this.$store.getters.formOnSave
-    },
+  components: {
+    'global-menu': require('components/global/menu.vue'),
+    'global-footer': require('components/global/footer.vue'),
+    'global-copyright': require('components/global/copyright.vue'),
   },
 }
 </script>
 
 <style src="bootstrap/dist/css/bootstrap.min.css"></style>
 <style src="font-awesome/css/font-awesome.min.css"></style>
-
+<style src="owl.carousel/dist/assets/owl.theme.green.min.css"></style>
+<style src="owl.carousel/dist/assets/owl.carousel.min.css"></style>
+<style src="assets/style.css"></style>
 <style lang="sass" type="text/sass">
 @import 'src/assets/base'
 
