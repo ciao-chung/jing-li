@@ -21,42 +21,33 @@
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right text-uppercase">
-          <li>
-            <a href="/"><span>首頁</span></a>
-          </li>
+          <template v-for="menu in menus">
+            <!-- 一般route -->
+            <li>
+              <router-link v-if="menu.route != undefined" :to="menu.route">
+                <span>{{menu.label}}</span>
+              </router-link>
+            </li>
 
-          <!-- 關於淨麗 -->
-          <li class="dropdown">
-            <a href="" class="dropdown-toggle" data-toggle="dropdown"><span>關於淨麗</span></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="/post/tech">領先技術</a>
-              </li>
-              <li>
-                <a href="/post/customer">我們的客戶</a>
-              </li>
-              <li>
-                <a href="/contact">聯絡我們</a>
-              </li>
-            </ul>
-          </li>
+            <!-- 巢狀route -->
+            <li class="dropdown" v-if="menu.sub instanceof Array">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                <span>{{menu.label}}</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li v-for="sub_menu in menu.sub">
+                  <router-link :to="sub_menu.route">{{sub_menu.label}}</router-link>
+                </li>
+              </ul>
+            </li>
 
-          <!-- 服務項目 -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>服務項目</span></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="/post/tube-cleaning">週波室內水管清洗</a>
-              </li>
-              <li>
-                <a href="/post/cleaning">外觀清潔</a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <a href="/post/allergens"><span>被忽略的過敏源</span></a>
-          </li>
+            <!-- 外部連結 -->
+            <li v-if="menu.external != undefined">
+              <a :href="menu.external" target="_blank">
+                <span>{{menu.label}}</span>
+              </a>
+            </li>
+          </template>
         </ul>
       </div>
     </div>
@@ -103,8 +94,8 @@ export default {
           ],
         },
         {
-          label: '服務項目',
-          external: 'https://www.goolge.com',
+          label: '被忽略的過敏源',
+          external: 'http://www.goolge.com',
         }
       ],
     }
