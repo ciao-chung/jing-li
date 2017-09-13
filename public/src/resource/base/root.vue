@@ -221,4 +221,7 @@ export default {
 
 <style lang="sass" type="text/sass" scoped>
 // @import 'src/assets/variable'
+header#header
+  @media (max-width: 320px)
+    background: url(/static/img/slider1-mb.jpg) center center no-repeat
 </style>

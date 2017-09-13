@@ -27,7 +27,7 @@
 
           <!-- 關於淨麗 -->
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown"><span>關於淨麗</span></a>
+            <a href="" class="dropdown-toggle" data-toggle="dropdown"><span>關於淨麗</span></a>
             <ul class="dropdown-menu">
               <li>
                 <a href="/post/tech">領先技術</a>
