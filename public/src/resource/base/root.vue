@@ -214,6 +214,11 @@
 <script>
 import baseConfig from 'src/mixins/base.js'
 export default {
+  mounted: function() {
+    this.$nextTick(() => {
+      this.$root.$emit('page.done')
+    })
+  },
   data: function() {
     return {}
   },
