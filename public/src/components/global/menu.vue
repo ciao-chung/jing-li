@@ -61,7 +61,7 @@ export default {
       menus: [
         {
           label: '首頁',
-          route: { name: 'root' },
+          route: { name: 'home' },
         },
         {
           label: '關於淨麗',

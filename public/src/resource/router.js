@@ -1,9 +1,9 @@
 module.exports = [
   {
     path: '/',
-    name: 'root',
-    header: 'root',
-    component: require('resource/base/root.vue'),
+    name: 'home',
+    header: 'home',
+    component: require('resource/base/home.vue'),
   },
   {
     path: '/post/:code',
