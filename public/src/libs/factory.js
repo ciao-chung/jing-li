@@ -1,6 +1,6 @@
 import queryString from 'qs'
 import lang from 'src/libs/trans.js'
-import config from 'src/../static/config/config.json'
+import config from 'src/../static/config/config.js'
 
 class Factory {
   urlToFilter(query) {

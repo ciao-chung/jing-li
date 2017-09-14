@@ -56,10 +56,6 @@
                     Curabitur in ipsum vel ipsum vehicula congue.
                   </li>
                 </ul>
-
-                <a href="#" class="btn btn-slategray">
-                  purchase
-                </a>
               </div>
             </div>
           </div>
@@ -107,7 +103,7 @@ export default {
         {
           icon: 'thumbs-up',
           title: '客戶肯定',
-          content: '多年的耕耘讓<br>我們累積了無數客戶的肯定<br>包含了許多上市上櫃的大公司<br>',
+          content: '多年的耕耘讓<br>我們累積了無數客戶的肯定<br>其中包含了許多上市上櫃的大公司<br>',
         },
         {
           icon: 'map-marker',

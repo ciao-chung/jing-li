@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import transData from 'resource/trans.js'
-import config from '../../static/config/config.json'
+import config from '../../static/config/config.js'
 
 class Lang {
   constructor() {

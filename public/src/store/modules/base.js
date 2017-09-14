@@ -1,4 +1,4 @@
-import config from 'src/../static/config/config.json'
+import config from 'src/../static/config/config.js'
 import lang from 'src/libs/trans.js'
 import factory from 'src/libs/factory.js'
 export default {

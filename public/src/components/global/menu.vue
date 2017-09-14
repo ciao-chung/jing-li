@@ -13,9 +13,9 @@
 
         <div class="navbar-brand">
           <span class="sr-only">Avada Pro Agency</span>
-          <a href="/">
+          <router-link :to="{ name: 'home' }">
             <img src="/static/img/main_logo.png" class="img-responsive center-block" alt="logo">
-          </a>
+          </router-link>
         </div>
 
       </div>
