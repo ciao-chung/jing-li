@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="container">
     <h2 class="text-danger">
       <i class="fa fa-warning"></i>
-      {{'404.message'|trans}}
+      找不到這個頁面！
     </h2>
   </div>
 </template>

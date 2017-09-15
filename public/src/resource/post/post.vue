@@ -1,6 +1,8 @@
 <template>
-  <div>
-    post
+  <div class="container" data-role="post">
+    <h1>{{post.title}}</h1>
+
+    <div v-html="post.content"></div>
   </div>
 </template>
 
@@ -20,6 +22,10 @@ export default {
       this.$store.dispatch('title.set', {
         title: this.post.title,
       })
+
+      this.$nextTick(() => {
+        this.$root.$emit('page.done')
+      })
     },
   },
   watch: {
@@ -38,4 +44,8 @@ export default {
 }
 </script>
 
-<style lang="sass" type="text/sass" scoped></script>
+<style lang="sass" type="text/sass" scoped>
+div[data-role="post"]
+  border: 1px red solid
+  padding-top: 30px
+</script>

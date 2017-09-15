@@ -102,3 +102,9 @@ export default {
   }
 }
 </script>
+
+<style lang="sass" type="text/sass" scoped>
+@import 'src/assets/variable'
+nav#mainNavigation
+  border-bottom: 1px $light-gray solid
+</style>
