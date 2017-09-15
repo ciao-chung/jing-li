@@ -28,5 +28,25 @@ const app = new Vue({
   mixins: [phantom],
   template: '<App/>',
   components: { App },
-  render: h => h(App)
+  created: function () {
+    this.initSEO()
+  },
+  methods: {
+    initSEO: function () {
+      this.$store.dispatch('title.set', {
+        title: this.config.company.name,
+      })
+    },
+  },
+  computed: {
+    config: function () {
+      return this.$store.getters.config
+    },
+  },
+  watch: {
+    $route: function () {
+      this.initSEO()
+    },
+  },
+  render: h => h(App),
 })

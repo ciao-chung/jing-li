@@ -20,7 +20,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-              <img src="static/img/intro.jpg" class="img-responsive center-block" alt="intro">
+              <img src="/static/img/intro.jpg" class="img-responsive center-block" alt="intro">
             </div>
 
             <div class="col-md-7">
@@ -126,5 +126,5 @@ export default {
 // @import 'src/assets/variable'
 header#header
   @media (max-width: 320px)
-    background: url(/static/img/slider1-mb.jpg) center center no-repeat
+    background: url('/static/img/slider1-mb.jpg') center center no-repeat
 </style>
