@@ -36,6 +36,17 @@ const app = new Vue({
       this.$store.dispatch('title.set', {
         title: this.config.company.name,
       })
+
+      this.$store.dispatch('structured.data.set', {
+        type: 'init',
+        data: {
+          site_name: this.config.company.name,
+          logo: `${window.location.origin}/static/img/logo.png`,
+          url: window.location.origin,
+          target: null,
+          query: null,
+        },
+      })
     },
   },
   computed: {
