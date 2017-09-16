@@ -1,11 +1,77 @@
 <template>
-  <div>
-    contact
+  <div class="container">
+    <h1>聯絡我們</h1>
+
+    <section class="intro bg-light-gray" v-for="location in locations">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe :src="location.url"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border:0"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="intro-description">
+              <h2>{{location.name}}</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ex, fermentum vel libero eget interdum semper libero. Curabitur egestas, arcu id tempor convallis.
+              </p>
+
+              <ul class="points">
+                <li>
+                  <span>
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                  {{location.address}}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  mounted: function() {
+    this.$nextTick(() => {
+      this.$root.$emit('page.done')
+    })
+  },
+  data: function() {
+    return {
+      locations: [
+        {
+          name: '台北服務據點',
+          url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.799769999152!2d121.4675503141124!3d25.006918845532393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAwJzI0LjkiTiAxMjHCsDI4JzExLjEiRQ!5e0!3m2!1szh-TW!2stw!4v1505533087448',
+          address: '新北市板橋區民族路266號',
+        },
+        {
+          name: '台中服務據點',
+          url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.799769999152!2d121.4675503141124!3d25.006918845532393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAwJzI0LjkiTiAxMjHCsDI4JzExLjEiRQ!5e0!3m2!1szh-TW!2stw!4v1505533087448',
+          address: '台中市北區館前路1號',
+        },
+        {
+          name: '高雄服務據點',
+          url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.799769999152!2d121.4675503141124!3d25.006918845532393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAwJzI0LjkiTiAxMjHCsDI4JzExLjEiRQ!5e0!3m2!1szh-TW!2stw!4v1505533087448',
+          address: '高雄市前金區中山路五福路',
+        },
+      ]
+    }
+  },
+}
 </script>
 
-<style lang="sass" type="text/sass" scoped></script>
+<style lang="sass" type="text/sass" scoped>
+div[data-role="location-wrap"]
+  div[data-role="location"]
+</script>

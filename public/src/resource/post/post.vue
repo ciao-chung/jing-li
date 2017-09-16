@@ -1,5 +1,5 @@
 <template>
-  <div class="container" data-role="post">
+  <div class="container" data-role="post" v-if="post instanceof Object">
     <h1>{{post.title}}</h1>
 
     <div v-html="post.content"></div>
@@ -18,7 +18,6 @@ export default {
         this.$router.push({ name: '404' })
         return
       }
-
       this.initSEO()
 
       this.$nextTick(() => {

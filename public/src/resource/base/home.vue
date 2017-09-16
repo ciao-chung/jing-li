@@ -6,8 +6,8 @@
         <div class="container">
 
           <div class="welcome-speech">
-            <h1>淨麗清潔有限公司</h1>
-            <p>不斷創新, 是永續的經營</p>
+            <h1>{{config.company.name}}</h1>
+            <p>{{config.company.slogan}}</p>
           </div>
 
         </div>
@@ -117,6 +117,11 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    config: function() {
+      return this.$store.getters.config
+    },
   },
 }
 </script>
