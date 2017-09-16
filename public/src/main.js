@@ -29,6 +29,10 @@ const app = new Vue({
   template: '<App/>',
   components: { App },
   created: function () {
+    if(!this.$route.name) {
+      this.$router.push({ name: '404' })
+      return
+    }
     this.initSEO()
   },
   methods: {
