@@ -25,35 +25,16 @@
 
             <div class="col-md-7">
               <div class="intro-description">
-                <h2>avada the best agency for ever</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ex, fermentum vel libero eget interdum semper libero. Curabitur egestas, arcu id tempor convallis.
-                </p>
+                <h2>常見問題</h2>
 
                 <ul class="points">
-                  <li>
+                  <li v-for="qna in qua_list">
                     <span>
-                      <i class="fa fa-star"></i>
+                      <i class="fa fa-thumb-tack"></i>
                     </span>
-                    Vestibulum pulvinar commodo malesuada.
-                  </li>
-                  <li>
-                    <span>
-                      <i class="fa fa-star"></i>
-                    </span>
-                    Pellentesque id massa et ligula convallis porta.
-                  </li>
-                  <li>
-                    <span>
-                      <i class="fa fa-star"></i>
-                    </span>
-                    Vivamus sed nunc sed ligula rhoncus sit amet eu elit.
-                  </li>
-                  <li>
-                    <span>
-                      <i class="fa fa-star"></i>
-                    </span>
-                    Curabitur in ipsum vel ipsum vehicula congue.
+                    <router-link :to="{ name: 'post', params: { code: qna.code} }" target="_blank">
+                      {{qna.label}}
+                    </router-link>
                   </li>
                 </ul>
               </div>
@@ -115,6 +96,11 @@ export default {
           title: '持續精進',
           content: '公司雖然經營多年<br>技術仍然不斷的再精進<br>只為帶給客戶更專業的服務',
         },
+      ],
+      qua_list: [
+        { label: '為何要清洗水管?', code: 'qna_'},
+        { label: '新的房屋需要清洗水管嗎?', code: 'qna_'},
+        { label: '水管大約多久需要清洗一次?', code: 'qna_'},
       ],
     }
   },
