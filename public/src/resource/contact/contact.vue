@@ -17,11 +17,8 @@
           </div>
 
           <div class="col-md-7">
-            <div class="intro-description">
+            <div class="intro-description" data-role="location">
               <h2>{{location.name}}</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ex, fermentum vel libero eget interdum semper libero. Curabitur egestas, arcu id tempor convallis.
-              </p>
 
               <ul class="points">
                 <li>
@@ -29,6 +26,31 @@
                     <i class="fa fa-map-marker"></i>
                   </span>
                   {{location.address}}
+                </li>
+
+                <li>
+                  <span>
+                    <i class="fa fa-user-circle"></i>
+                  </span>
+                  {{location.contact}}
+                </li>
+
+                <li v-if="location.tel">
+                  <span>
+                    <i class="fa fa-phone"></i>
+                  </span>
+                  <a :href="'tel:'+location.tel">
+                    {{location.tel}}
+                  </a>
+                </li>
+
+                <li v-if="location.phone">
+                  <span>
+                    <i class="fa fa-mobile"></i>
+                  </span>
+                  <a :href="'tel:'+location.phone">
+                    {{location.phone}}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -52,7 +74,7 @@ export default {
       locations: [
         {
           name: '台北服務據點',
-          tel: '02-2963-5558(分機: 16)',
+          tel: '02-2963-5558#16',
           contact: '林小姐',
           url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.799769999152!2d121.4675503141124!3d25.006918845532393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAwJzI0LjkiTiAxMjHCsDI4JzExLjEiRQ!5e0!3m2!1szh-TW!2stw!4v1505533087448',
           address: '新北市板橋區國泰街25巷6號5F',
@@ -80,6 +102,9 @@ export default {
 </script>
 
 <style lang="sass" type="text/sass" scoped>
-div[data-role="location-wrap"]
-  div[data-role="location"]
-</script>
+div[data-role="location"]
+  .fa
+    display: inline-block
+    width: 20.56px
+    text-align: center
+</style>
