@@ -59,31 +59,14 @@
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-widget">
-          <h4>Avada Agency</h4>
-
-          <p>
-            HUGE Website Builder is a big library of pre-designed web elements which help you to create website in few minutes.
-          </p>
+          <h4>聯絡資訊</h4>
 
           <div class="footer-address">
             <p>
-              1-800-123-HELLO  <br>
-              example@mail.com
+              <a href="tel:02-2963-5558">02-2963-5558</a>
+              <br><br>
+              <a href="mailto:jing.li@msa.hinet.net">jing.li@msa.hinet.net</a>
             </p>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <ul class="footer-share-button">
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              </ul>
-            </div>
           </div>
         </div>
 
