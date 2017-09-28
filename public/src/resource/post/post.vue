@@ -2,7 +2,7 @@
   <div class="container" data-role="post" v-if="post instanceof Object">
     <h1>{{post.title}}</h1>
 
-    <div v-html="post.content"></div>
+    <div v-html="post.content" data-role="post-content"></div>
   </div>
 </template>
 
@@ -86,8 +86,11 @@ export default {
 }
 </script>
 
-<style lang="sass" type="text/sass" scoped>
+<style lang="sass" type="text/sass">
 div[data-role="post"]
-  border: 1px red solid
   padding-top: 30px
-</script>
+div[data-role="post-content"]
+  ul
+    li
+      list-style: disc
+</style>

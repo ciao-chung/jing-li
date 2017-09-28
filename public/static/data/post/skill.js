@@ -1,2 +1,3 @@
-const content = '領先技術'
+const content = `
+`
 module.exports = content
