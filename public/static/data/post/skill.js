@@ -5,12 +5,12 @@ const content = `
 
 <p>才能提供最專業的服務</p>
 
-<p><img class="img-responsive" src="/static/img/licence1.jpg" style="max-width: 700px" /></p>
+<p><img class="img-responsive" src="/static/img/licence1.jpg" /></p>
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-<p><img class="img-responsive" src="/static/img/licence2.jpg" style="max-width: 700px" /></p>
+<p><img class="img-responsive" src="/static/img/licence2.jpg" /></p>
 
 <p>&nbsp;</p>
 
