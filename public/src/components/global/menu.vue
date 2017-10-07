@@ -4,7 +4,7 @@
 
       <div class="navbar-header">
 
-        <button @click="toggleMenu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
+        <button @click="toggleMenu" type="button" class="navbar-toggle collapsed">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -19,7 +19,7 @@
         </div>
 
       </div>
-      <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <div class="collapse navbar-collapse" :open="open">
         <ul class="nav navbar-nav navbar-right text-uppercase">
           <template v-for="menu in menus">
             <!-- 一般route -->
@@ -58,7 +58,7 @@
 export default {
   watch: {
     $route: function() {
-
+      this.open = false
     },
   },
   methods: {
@@ -116,6 +116,17 @@ export default {
 
 <style lang="sass" type="text/sass" scoped>
 @import 'src/assets/variable'
+@import 'src/assets/mixin'
+$transition-during: 0.7s
 nav#mainNavigation
   border-bottom: 1px $light-gray solid
+  div.container
+    div.navbar-collapse
+      display: block
+      max-height: 0
+      overflow: hidden
+      @include transition(all, $transition-during, ease)
+      &[open]
+        max-height: 100vh
+        @include transition(all, $transition-during, ease)
 </style>
