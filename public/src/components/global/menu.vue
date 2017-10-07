@@ -14,7 +14,7 @@
         <div class="navbar-brand">
           <span class="sr-only">Avada Pro Agency</span>
           <router-link :to="{ name: 'home' }">
-            <img src="/static/img/main_logo.png" class="img-responsive center-block" alt="logo">
+            <img src="/static/img/main_logo.png" class="img-responsive center-block" alt="logo" id="logo">
           </router-link>
         </div>
 
@@ -120,6 +120,9 @@ export default {
 $transition-during: 0.7s
 nav#mainNavigation
   border-bottom: 1px $light-gray solid
+  #logo
+    width: 42px
+    height: 42px
   div.container
     div.navbar-collapse
       display: block
