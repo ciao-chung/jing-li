@@ -4,7 +4,7 @@
 
       <div class="navbar-header">
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
+        <button @click="toggleMenu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -56,8 +56,19 @@
 
 <script>
 export default {
+  watch: {
+    $route: function() {
+
+    },
+  },
+  methods: {
+    toggleMenu: function() {
+      this.open = !this.open
+    },
+  },
   data: function() {
     return {
+      open: false,
       menus: [
         {
           label: '首頁',
