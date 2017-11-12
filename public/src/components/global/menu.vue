@@ -85,10 +85,6 @@ export default {
               label: '我們的客戶',
               route: { name: 'post', params: { code: 'customer' } },
             },
-            {
-              label: '聯絡我們',
-              route: { name: 'contact' },
-            },
           ],
         },
         {
@@ -105,9 +101,9 @@ export default {
           ],
         },
         {
-          label: '被忽略的過敏源',
-          external: 'http://www.goolge.com',
-        }
+          label: '聯絡我們',
+          route: { name: 'contact' },
+        },
       ],
     }
   }
