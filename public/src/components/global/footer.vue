@@ -24,28 +24,13 @@
               <img src="/static/img/site-url-qrcode.png" class="img-responsive center-block" alt="recent news 1">
             </div>
             <div class="col-md-8 col-sm-4 col-xs-6">
-              <div class="row">
+              <!-- <div class="row">
                 <p class="text-capitalize">
                   <a>
                     前往網站
                   </a>
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row footer-news">
-            <div class="col-md-4 col-sm-4 col-xs-6">
-              <img src="/static/img/intro.jpg" class="img-responsive center-block" alt="recent news 2">
-            </div>
-            <div class="col-md-8 col-sm-4 col-xs-6">
-              <div class="row">
-                <p class="text-capitalize">
-                  <a>
-                    a clear website gives more experience to the visitors
-                  </a>
-                </p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
