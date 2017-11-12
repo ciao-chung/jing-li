@@ -4,22 +4,14 @@
       <div class="row">
 
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-widget">
-          <h4>Useful Links</h4>
+          <h4>相關新聞報導</h4>
           <ul class="row footer-links">
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Mobile</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Services</a></li>
-            </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <li><a href="#">Organization</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Media</a></li>
-              <li><a href="#">24/7</a></li>
-              <li><a href="#">Right Way</a></li>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <li v-for="link in link_group1">
+                <a :href="link.link" target="_blank">
+                  {{link.label}}
+                </a>
+              </li>
             </div>
           </ul>
         </div>
@@ -74,3 +66,34 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      link_group1: [
+        {
+          label: '你喝的水乾淨嗎？直擊水管汙垢如墨汁',
+          link: 'http://www.setn.com/News.aspx?NewsID=220340',
+        },
+        {
+          label: '水管比想像中髒！　清洗後流出臭黑水',
+          link: 'https://news.tvbs.com.tw/life/735606',
+        },
+        {
+          label: '水管藏鐵銹看不到　專家出手汙垢秒現形',
+          link: 'http://www.setn.com/News.aspx?NewsID=178067',
+        },
+        {
+          label: '水管洗出咖啡水 病菌全喝下肚',
+          link: 'https://goo.gl/Tfmw1p',
+        },
+        {
+          label: '水管長久未清 流出的水比馬桶髒！',
+          link: 'http://news.ltn.com.tw/news/life/breakingnews/1219135',
+        },
+      ]
+    }
+  },
+}
+</script>
