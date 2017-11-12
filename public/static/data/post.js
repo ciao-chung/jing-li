@@ -40,7 +40,7 @@ export default {
   },
 
   qna1: {
-    title: '為何要清洗水管?',
+    title: '為何水塔已經洗了還要清洗水管?',
     photo: `${window.location.origin}/static/img/logo.png`,
     description: '',
     content: require('static/data/post/qna1.js'),

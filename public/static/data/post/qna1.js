@@ -1,4 +1,12 @@
 const content = `
+<p>想像一下<span data-role="mark">水塔是杯子水管是吸管</span></p>
+
+<p>如果杯子都會定期清洗</p>
+
+<p>那吸管為什麼都沒固定清洗？</p>
+
+<p>&nbsp;</p>
+
 <p>早年民間普遍沒有清洗水管的習慣主要是因為沒有清洗水管的技術</p>
 
 <p>因此市面上才會有濾水器或是加水站</p>
@@ -16,5 +24,6 @@ const content = `
 <p>對人體將會造成不小的負擔</p>
 
 <p>&nbsp;</p>
+
 `
 module.exports = content

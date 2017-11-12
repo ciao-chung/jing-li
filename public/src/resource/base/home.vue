@@ -98,7 +98,7 @@ export default {
         },
       ],
       qua_list: [
-        { label: '為何要清洗水管?', code: 'qna1'},
+        { label: '為何水塔已經洗了還要清洗水管?', code: 'qna1'},
         { label: '什麼時候要清洗水管？', code: 'qna2'},
         { label: '水管多久需要清洗一次？', code: 'qna3'},
         { label: '每次清洗大約需要多久的時間？', code: 'qna4'},
