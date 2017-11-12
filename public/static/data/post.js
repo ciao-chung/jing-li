@@ -47,4 +47,13 @@ export default {
     created_at: '2017-09-16T00:00:00',
     updated_at: '2017-09-16T00:00:00',
   },
+
+  qna2: {
+    title: '什麼時候要清洗水管？',
+    photo: `${window.location.origin}/static/img/logo.png`,
+    description: '',
+    content: require('static/data/post/qna2.js'),
+    created_at: '2017-09-16T00:00:00',
+    updated_at: '2017-09-16T00:00:00',
+  },
 }

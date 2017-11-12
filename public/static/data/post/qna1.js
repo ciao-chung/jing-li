@@ -16,9 +16,5 @@ const content = `
 <p>對人體將會造成不小的負擔</p>
 
 <p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
 `
 module.exports = content

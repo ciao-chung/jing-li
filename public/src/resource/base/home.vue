@@ -99,6 +99,7 @@ export default {
       ],
       qua_list: [
         { label: '為何要清洗水管?', code: 'qna1'},
+        { label: '什麼時候要清洗水管？', code: 'qna2'},
       ],
     }
   },
