@@ -38,4 +38,13 @@ export default {
     created_at: '2017-09-16T00:00:00',
     updated_at: '2017-09-16T00:00:00',
   },
+
+  qna1: {
+    title: '為何要清洗水管?',
+    photo: `${window.location.origin}/static/img/logo.png`,
+    description: '',
+    content: require('static/data/post/qna1.js'),
+    created_at: '2017-09-16T00:00:00',
+    updated_at: '2017-09-16T00:00:00',
+  },
 }

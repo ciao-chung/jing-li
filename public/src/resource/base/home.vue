@@ -98,9 +98,7 @@ export default {
         },
       ],
       qua_list: [
-        { label: '為何要清洗水管?', code: 'qna_'},
-        { label: '新的房屋需要清洗水管嗎?', code: 'qna_'},
-        { label: '水管大約多久需要清洗一次?', code: 'qna_'},
+        { label: '為何要清洗水管?', code: 'qna1'},
       ],
     }
   },
