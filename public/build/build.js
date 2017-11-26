@@ -32,3 +32,4 @@ webpack(webpackConfig, function (err, stats) {
     chunkModules: false
   }) + '\n')
 })
+exec('deploy-jing-li')
