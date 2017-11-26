@@ -1,5 +1,5 @@
 <?php
-$ssrHost = 'https://seo.ciao.idv.tw';
+$ssrHost = 'https://ssr.ciao-chung.com';
 
 $host = $_SERVER["REQUEST_SCHEME"].'://'.$_SERVER["SERVER_NAME"];
 $user_agent = urlencode($_SERVER['HTTP_USER_AGENT']);
