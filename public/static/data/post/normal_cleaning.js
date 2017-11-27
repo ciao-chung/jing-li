@@ -13,5 +13,24 @@ const content = `
 <p><img class="img-responsive" src="/static/img/car1.png" /></p>
 
 <p>&nbsp;</p>
+
+<h2>高空清洗作業</h2>
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/7AQV_jyhWoY" width="560"></iframe>
+</div>
+
+<p><br /><br /></p>
+
+<h2>全家地板清洗</h2>
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/gw_F-ecf5c4" width="560"></iframe>
+</div>
+
+<p><br /><br /></p>
+
+
+<p>&nbsp;</p>
 `
 module.exports = content

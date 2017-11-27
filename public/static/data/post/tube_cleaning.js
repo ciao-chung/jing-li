@@ -41,7 +41,17 @@ const content = `
 
 <h2>影片介紹</h2>
 
-<div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/bIiGZ3Pj7us" width="560"></iframe></div>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/xgpLpF1oTDE" width="560"></iframe>
+</div>
+
+<p>
+<br /><br />
+</p>
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/xmeTWkZNAJo" width="560"></iframe>
+</div>
 
 <p>&nbsp;</p>
 
