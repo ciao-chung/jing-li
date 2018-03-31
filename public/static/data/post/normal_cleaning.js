@@ -16,6 +16,16 @@ const content = `
 
 <h2>高空清洗作業</h2>
 
+<p><img class="img-responsive" src="/static/img/high1.jpg"></p>
+
+<br>
+
+<p><img class="img-responsive" src="/static/img/high2.jpg"></p>
+
+<br>
+
+<p><img class="img-responsive" src="/static/img/high3.jpg"></p>
+
 <div class="embed-responsive embed-responsive-16by9">
 <iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/7AQV_jyhWoY" width="560"></iframe>
 </div>
