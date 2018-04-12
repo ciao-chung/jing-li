@@ -42,7 +42,7 @@ const content = `
 <h2>影片介紹</h2>
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/xgpLpF1oTDE" width="560"></iframe>
+<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/91cqasffiHk" width="560"></iframe>
 </div>
 
 <p>
@@ -50,7 +50,7 @@ const content = `
 </p>
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/xmeTWkZNAJo" width="560"></iframe>
+<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/NNCVcb-Uraw" width="560"></iframe>
 </div>
 
 <p>&nbsp;</p>

@@ -27,15 +27,7 @@ const content = `
 <p><img class="img-responsive" src="/static/img/high3.jpg"></p>
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/7AQV_jyhWoY" width="560"></iframe>
-</div>
-
-<p><br /><br /></p>
-
-<h2>全家地板清洗</h2>
-
-<div class="embed-responsive embed-responsive-16by9">
-<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/gw_F-ecf5c4" width="560"></iframe>
+<iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="315" src="https://www.youtube.com/embed/OAkPKQxofyg" width="560"></iframe>
 </div>
 
 <p><br /><br /></p>
