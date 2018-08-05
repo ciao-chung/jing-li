@@ -1,11 +1,20 @@
 <template>
   <div>
-    <div class="main-content">
-      <section class="intro bg-light-gray" home>
+    <header id="header" class="header-wrapper home-parallax home-fade">
+      <div class="header-overlay"></div>
+      <div class="header-wrapper-inner">
         <div class="container">
-          <p v-html="getPost('home')"></p>
+
+          <div class="welcome-speech">
+            <h1>{{config.company.name}}</h1>
+            <p>{{config.company.slogan}}</p>
+          </div>
+
         </div>
-      </section>
+      </div>
+    </header>
+
+    <div class="main-content">
 
       <section class="intro bg-light-gray">
         <div class="container">
@@ -63,7 +72,6 @@
 
 <script>
 import baseConfig from 'src/mixins/base.js'
-import postData from 'static/data/post.js'
 export default {
   mounted: function() {
     this.$nextTick(() => {
@@ -90,18 +98,11 @@ export default {
         },
       ],
       qua_list: [
-        // { label: '為何水塔已經洗了還要清洗水管?', code: 'qna1'},
+        { label: '為何水塔已經洗了還要清洗水管?', code: 'qna1'},
         { label: '什麼時候要清洗水管？', code: 'qna2'},
         { label: '水管多久需要清洗一次？', code: 'qna3'},
         { label: '每次清洗大約需要多久的時間？', code: 'qna4'},
       ],
-    }
-  },
-  methods: {
-    getPost(name) {
-      const post = postData[name]
-      if(!post) return null
-      return post.content
     }
   },
   computed: {
@@ -120,7 +121,4 @@ header#header
     background: url('/static/img/slider1-mb.jpg') center center no-repeat
 .fa-thumb-tack
   color: orange
-.main-content
-  section[home]
-    padding-top: 0
 </style>

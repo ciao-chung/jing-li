@@ -87,19 +87,19 @@ export default {
             },
           ],
         },
-        {
-          label: '服務項目',
-          sub: [
-            {
-              label: '週波室內水管清洗',
-              route: { name: 'post', params: { code: 'tube_cleaning' } },
-            },
-            {
-              label: '外觀清潔',
-              route: { name: 'post', params: { code: 'normal_cleaning' } },
-            },
-          ],
-        },
+        // {
+        //   label: '服務項目',
+        //   sub: [
+        //     {
+        //       label: '週波室內水管清洗',
+        //       route: { name: 'post', params: { code: 'tube_cleaning' } },
+        //     },
+        //     {
+        //       label: '外觀清潔',
+        //       route: { name: 'post', params: { code: 'normal_cleaning' } },
+        //     },
+        //   ],
+        // },
         {
           label: '聯絡我們',
           route: { name: 'contact' },

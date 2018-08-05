@@ -19,6 +19,16 @@ export default {
     updated_at: '2017-09-16T00:00:00',
   },
 
+  // 我們的客戶
+  home: {
+    title: '我們的客戶',
+    photo: `${window.location.origin}/static/img/logo.png`,
+    description: '',
+    content: require('static/data/post/home.js'),
+    created_at: '2017-09-16T00:00:00',
+    updated_at: '2017-09-16T00:00:00',
+  },
+
   // 週波室內水管清洗
   tube_cleaning: {
     title: '週波室內水管清洗',
@@ -71,6 +81,15 @@ export default {
     photo: `${window.location.origin}/static/img/logo.png`,
     description: '',
     content: require('static/data/post/qna4.js'),
+    created_at: '2017-09-16T00:00:00',
+    updated_at: '2017-09-16T00:00:00',
+  },
+
+  video: {
+    title: '外觀清潔',
+    photo: `${window.location.origin}/static/img/logo.png`,
+    description: '',
+    content: require('static/data/post/video.js'),
     created_at: '2017-09-16T00:00:00',
     updated_at: '2017-09-16T00:00:00',
   },
