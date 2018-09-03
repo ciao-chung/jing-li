@@ -8,6 +8,47 @@ const content = `
 這些有機質會和自來水裡面的氯結合，轉變成為<span data-role="mark">致癌性極高的三鹵甲烷</span>如果長期拿來刷牙、煮飯、飲用，對人體將會造成不小的負擔。
 </p>
 
+<h2>收費標準</h2>
+
+<table class="table">
+  <thead style="background-color: #474747; color: white;">
+    <tr>
+      <th>建物類型</th>
+      <th>格局</th>
+      <th>收費</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>公寓/華廈/大樓</td>    
+      <td>一廚一衛</td>    
+      <td>3990元</td>    
+    </tr>
+    <tr>
+      <td>公寓/華廈/大樓</td>    
+      <td>一廚二衛</td>    
+      <td>4990元</td>    
+    </tr>
+    <tr>
+      <td>三層樓內透天</td>    
+      <td>一廚三衛</td>    
+      <td>5990元</td>    
+    </tr>
+    <tr>
+      <td colspan="2">其他</td>    
+      <td>依現場狀況另外客製化報價</td> 
+    </tr>
+  </tbody>
+</table>
+
+<strong>其他收費</strong>
+
+<ul class="disc-list">
+  <li>無電梯公寓: 每增加一層樓加收100元</li>
+  <li>衛浴、廚房: 每增加一間加收890元</li>
+  <li>衛浴、廚房在不同樓層: 每增加一層樓加收890元(包含樓中樓)</li>
+</ul>
+
 <h2>外觀清潔</h2>
 
 <h4>重裝設備繫一車 清潔效率一級棒</h4>
