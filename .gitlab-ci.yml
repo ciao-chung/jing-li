@@ -30,9 +30,6 @@ deploy:
     variables:
       - $CI_COMMIT_TAG =~ /^deploy-.*$/
   script:
-    - cd public
-    - yarn install
-    - yarn build
     - cd $CI_PROJECT_DIR
     - git clone git@bitbucket.org:ciao0958/project-config.git
     - cd $CI_PROJECT_DIR/project-config
