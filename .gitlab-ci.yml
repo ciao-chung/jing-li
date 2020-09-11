@@ -1,0 +1,39 @@
+image: node:6
+
+cache:
+  paths:
+    - frontend/node_modules
+stages:
+  - test
+  - build
+  - deploy
+
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - ssh-keyscan github.com >> ~/.ssh/known_hosts
+  - ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+  - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - ls -a
+  - git config --global user.email "cubeciao@gmail.com"
+  - git config --global user.name "Devops"
+  - yarn global add ciao-deploy anchor-cli
+  - node -v
+
+deploy:
+  stage: deploy
+  only:
+    variables:
+      - $CI_COMMIT_TAG =~ /^deploy-.*$/
+  script:
+    - cd public
+    - yarn install
+    - yarn build
+    - cd $CI_PROJECT_DIR
+    - git clone git@bitbucket.org:ciao0958/project-config.git
+    - cd $CI_PROJECT_DIR/project-config
+    - anchor-cli --command=web-deploy --config=$CI_PROJECT_DIR/project-config/custom-server1/jing-li.yml
