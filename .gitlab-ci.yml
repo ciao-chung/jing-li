@@ -2,7 +2,7 @@ image: node:8
 
 cache:
   paths:
-    - frontend/node_modules
+    - public/node_modules
 stages:
   - test
   - build
