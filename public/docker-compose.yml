@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  jingli:
+    container_name: jingli
+    build:
+      context: .
+    restart: unless-stopped
+    tty: true
+    working_dir: /site/frontend
+    ports:
+      - "8083:8083"
+    networks:
+      - jing-li
+    volumes:
+      - .:/site/frontend
+
+networks:
+  jing-li:
+    driver: bridge
