@@ -15,3 +15,11 @@
 - 在public目錄執行`docker compose up -d`
 - 執行`docker exec -it jingli bash`進入container
 - 在/site/frontend執行`yarn install`安裝套件
+- 執行`yarn dev`
+
+## 佈署github page
+
+- public/src/main.js的vue router要取消history mode改成hash mode
+- 進入container在/site/frontend執行`yarn build:github-page`
+- 將public/docs目錄複製到根目錄
+- push到github repo(若repo name有改要調整public/config/index.js的assetsPublicPath)

@@ -17,7 +17,7 @@ window.self.$ = window.self.jQuery = $
 import routerRules from 'resource/router.js'
 const router = new VueRouter({
   routes: routerRules,
-  mode: 'history'
+  mode: 'hash'
 })
 
 import store from 'src/store/store'
