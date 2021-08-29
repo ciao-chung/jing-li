@@ -10,3 +10,8 @@
 
 然後push到gitlab repo
 
+## docker開發模式
+
+- 在public目錄執行`docker compose up -d`
+- 執行`docker exec -it jingli bash`進入container
+- 在/site/frontend執行`yarn install`安裝套件

@@ -1,13 +1,15 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
 
+const isGithubPage = process.env.GITHUB_PAGE == 1
+const distFolderName = !isGithubPage ? 'dist' : 'docs'
 module.exports = {
   build: {
     env: require('./prod.env'),
-    index: path.resolve(__dirname, '../dist/index.html'),
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    index: path.resolve(__dirname, '../'+distFolderName+'/index.html'),
+    assetsRoot: path.resolve(__dirname, '../'+distFolderName),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: !isGithubPage ? '/' : '/jing-li/',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
